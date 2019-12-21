@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<!-- Robert Johnson password SPA -->
+	<!-- 4131 Fall 2019 -->
+<head>
+	<title>XKCD Password Generator joh1055</title>
+	<link rel="stylesheet" type="text/css" href="SPAcss.css">
+	<script type="text/javascript" src="SPAjava.js"></script>
+
+</head>
+<body>
+	<main>
+	<h1>XKCD Password Generator</h1>
+	<h2>Created by Robert Johnson</h2>
+	<p></p>
+	<p>Set the variables and then press the button to generate 10 password options</p>
+	<div class="centeringL">
+	<div class="sliders">
+	<label for="pwLength">Maximum Password Length </label>
+    <input type="range" min="8" max="24" id="pwLength" oninput="updateSlider()">
+    <div id="pwLenVal" class="numView"></div>
+    </div>
+	<div class="sliders">
+	<label for="pwMin">Password Word Min Length </label>
+    <input type="range" min="2" max="7" value="3" id="pwMin" oninput="updateSlider()"> 
+    <div id="pwMinLenVal" class="numView"></div>
+	<br>
+	</div>
+	<div class="sliders">
+	<label for="pwMax">Password Word Max Length </label>
+    <input type="range" min="2" max="7" value="6" id="pwMax" oninput="updateSlider()"> 
+    <span id="pwMaxLenVal" class="numView"></span>
+    </div>
+    </div>
+	<br>
+	<div class="centering">
+	<input type="checkbox" name="group1" id="numSub" onclick="checkNS()">Number Substitution<br />
+	<input type="checkbox" name="group1" id="sentence" onclick="checkSent()">Sentence Passwords<br />
+	<button onclick="getTenPws()">Generate Passwords</button>
+	</div>
+	<br>
+	<br>
+	<h2>Generated Passwords</h2>
+	<table id="passwordTable">
+		<tr class="tbllabel"><td>Letter Count</td><td>Words</td><td></td><td></td><td></td></tr>
+	</table>
+	</main>
+</body>
+</html>
