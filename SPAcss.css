@@ -1,0 +1,39 @@
+main {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+table {
+	display: block;
+	margin: auto;
+    border: 1px solid #000000;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+tr.tbllabel td {
+    border-bottom: 1px solid #0000ff;
+    background-color: lightblue;
+}
+td {
+	min-width: 100px;
+}
+.sliders {
+	display: grid;
+	grid-template-columns: 2fr 2fr 1fr;
+}
+.numView {
+	margin-left: 4px;
+}
+
+.centering {
+	display: block;
+	max-width: 300px;
+	margin: auto;
+}
+
+.centeringL {
+	display: block;
+	max-width: 700px;
+	margin: auto;
+}
